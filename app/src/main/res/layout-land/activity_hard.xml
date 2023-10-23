@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowFullscreen="true"
+    android:orientation="vertical"
+    android:background="@drawable/menu_back"
+    tools:context=".activityes.Medium"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+        <ImageButton
+            android:id="@+id/arrow"
+            android:layout_gravity="start"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/baseline_arrow_back_24"
+            />
+        <TextView
+            android:textColor="#090A0A"
+            android:id="@+id/level"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="Easy"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="start"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/img_6"
+            />
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/timehard"
+            android:layout_marginLeft="20dp"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="00:00"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/baseline_volume_off_24"
+            android:id="@+id/switchhard"
+            />
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:windowFullscreen="true">
+
+        <ImageButton
+            android:id="@+id/imageButton21"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton30"
+            app:layout_constraintTop_toTopOf="@+id/imageButton25"
+            app:srcCompat="@drawable/img"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton22"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton26"
+            app:layout_constraintHorizontal_bias="0.381"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img" />
+
+        <ImageButton
+            android:id="@+id/imageButton23"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton32"
+            app:layout_constraintTop_toTopOf="@+id/imageButton21"
+            app:srcCompat="@drawable/img" />
+
+        <ImageButton
+            android:id="@+id/imageButton24"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton31"
+            app:layout_constraintTop_toTopOf="@+id/imageButton21"
+            app:srcCompat="@drawable/img"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton25"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton29"
+            app:layout_constraintStart_toStartOf="@+id/imageButton29"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton29"
+            app:srcCompat="@drawable/img" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton25"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageButton25"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton25"
+            app:srcCompat="@drawable/img" />
+
+        <ImageButton
+            android:id="@+id/imageButton33"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton21"
+            app:layout_constraintTop_toTopOf="@+id/imageButton"
+            app:srcCompat="@drawable/img" />
+
+        <ImageButton
+            android:id="@+id/imageButton34"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton24"
+            app:layout_constraintTop_toTopOf="@+id/imageButton33"
+            app:srcCompat="@drawable/img" />
+
+        <ImageButton
+            android:id="@+id/imageButton35"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton23"
+            app:layout_constraintTop_toTopOf="@+id/imageButton34"
+            app:srcCompat="@drawable/img" />
+
+        <ImageButton
+            android:id="@+id/imageButton26"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton27"
+            app:layout_constraintStart_toEndOf="@+id/imageButton22"
+            app:layout_constraintTop_toTopOf="@+id/imageButton22"
+            app:srcCompat="@drawable/img"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton27"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton28"
+            app:layout_constraintStart_toEndOf="@+id/imageButton26"
+            app:layout_constraintTop_toTopOf="@+id/imageButton26"
+            app:srcCompat="@drawable/img"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton28"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageButton27"
+            app:layout_constraintTop_toTopOf="@+id/imageButton27"
+            app:srcCompat="@drawable/img"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton29"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="@+id/imageButton22"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton22"
+            app:srcCompat="@drawable/img" />
+
+        <ImageButton
+            android:id="@+id/imageButton30"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton29"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton26"
+            app:layout_constraintTop_toTopOf="@+id/imageButton29"
+            app:srcCompat="@drawable/img" />
+
+        <ImageButton
+            android:id="@+id/imageButton31"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton30"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton27"
+            app:layout_constraintTop_toTopOf="@+id/imageButton30"
+            app:srcCompat="@drawable/img" />
+
+        <ImageButton
+            android:id="@+id/imageButton32"
+            style="@style/RoundedImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton31"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton28"
+            app:layout_constraintTop_toTopOf="@+id/imageButton31"
+            app:srcCompat="@drawable/img" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
